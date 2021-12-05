@@ -13,7 +13,6 @@ ENV BACKEND_URL $BACKEND_URL
 
 COPY . .
 
-EXPOSE 5000
+EXPOSE 80
 
-# the command that starts our app
 CMD ["node", "index.js"]
