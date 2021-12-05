@@ -18,7 +18,7 @@
         }
 
         window.addEventListener('load', (event) => {
-            fetch('http://localhost:6868/user/list')
+            fetch(process.env.BACKEND_URL+'/user/list')
                 .then(response => response.json())
                 .then(data => {
                     let tbody = document.getElementById('body');

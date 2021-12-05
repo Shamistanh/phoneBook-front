@@ -18,7 +18,7 @@
         }
 
         window.addEventListener('load', (event) => {
-            fetch('http://localhost:6868/user/status')
+            fetch(process.env.BACKEND_URL+'/user/status')
                 .then(response => response.json())
                 .then(data => {
                   console.log(data)
